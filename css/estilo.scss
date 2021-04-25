@@ -5,7 +5,45 @@
     --dark-gray: hsl(0, 0%, 59%);
 }
 
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 body{
     font-family: 'Kumbh Sans', sans-serif;
-    background-color: --dark-cyan;
+    background-color: var(--dark-cyan);
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; //VH: View Height : Toma el tamaño real del dispositivo. Se hace responsivo.//
+}
+
+.card {
+    background-color: white;
+    width: 326px;
+    border-radius: 16px;
+    overflow: hidden;
+    
+    &-header {
+        width: 100%; 
+        display: block;
+    }
+
+    &-body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &-img {
+            border: 5px solid white;
+            border-radius: 50%;
+            margin-top: calc(-48px - 5px);
+        }
+    }
 }
