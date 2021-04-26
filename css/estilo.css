@@ -18,6 +18,9 @@ html {
 body {
   font-family: 'Kumbh Sans', sans-serif;
   background-color: var(--dark-cyan);
+  background-image: url("../img/bg-pattern-top.svg"), url("../img/bg-pattern-bottom.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: right 50vw bottom 50vw, left 50vw top 50vw;
 }
 
 .flex {
@@ -56,11 +59,48 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  border-bottom: 1px solid rgba(153, 153, 153, 0.267);
 }
 
 .card-body-img {
   border: 5px solid white;
   border-radius: 50%;
   margin-top: calc(-48px - 5px);
+  background-color: white;
+}
+
+.card-body-title {
+  margin-top: 2rem;
+  font-size: 1.8rem;
+}
+
+.card-body-title span {
+  color: var(--dark-gray);
+  font-weight: 400;
+}
+
+.card-body-text {
+  color: var(--dark-gray);
+  font-size: 1.6rem;
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+
+.card-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.card-footer-social {
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.card-footer-social p {
+  letter-spacing: 1px;
 }
 /*# sourceMappingURL=estilo.css.map */
